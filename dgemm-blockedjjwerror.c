@@ -25,7 +25,7 @@ inline static void do_block(int lda,int M, int N, int K, int MM, int NN, int KK,
             double cij = C[i + j * lda];
             for (int k = 0; k < KK; ++k) {
                 cij += A[i + k * K] * B[k + j * N];
-		printf("i:%d,j:%d,k:%d,MM:%d,NN:%d,KK:%d\n",i,j,k,MM,NN,KK)
+		printf("i:%d,j:%d,k:%d,MM:%d,NN:%d,KK:%d\n",i,j,k,MM,NN,KK);
             }
             C[i + j * lda] = cij;
         }
