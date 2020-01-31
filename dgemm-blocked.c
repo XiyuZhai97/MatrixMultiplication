@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include <math.h>
 const char *dgemm_desc = "Simple blocked dgemm.";
-#pragma GCC optimize(3,"Ofast","inline")
+#pragma GCC optimize(3,"Ofast","inline","unroll-loops","prefetch-loop-arrays")
 
 #define BLOCK_L1 256
 #define BLOCK_L2 512
@@ -44,10 +44,10 @@ static inline void matmul_4xkxkx4(int lda, int K, double* a, double* b, double* 
     bi2 = _mm256_broadcast_sd(b++);
     bi3 = _mm256_broadcast_sd(b++);
 
-    c_col0 = _mm256_add_pd(c_col0, _mm256_mul_pd(a_coli, bi0));
-    c_col1 = _mm256_add_pd(c_col1, _mm256_mul_pd(a_coli, bi1));
-    c_col2 = _mm256_add_pd(c_col2, _mm256_mul_pd(a_coli, bi2));
-    c_col3 = _mm256_add_pd(c_col3, _mm256_mul_pd(a_coli, bi3));
+    c_col0 = _mm256_fmadd_pd(a_coli, bi0,c_col0);
+    c_col1 = _mm256_fmadd_pd(a_coli, bi1,c_col1);
+    c_col2 = _mm256_fmadd_pd(a_coli, bi2,c_col2);
+    c_col3 = _mm256_fmadd_pd(a_coli, bi3,c_col3);
   }
 
   _mm256_storeu_pd(c, c_col0);
@@ -83,20 +83,20 @@ static inline void copy_b (int lda, const int K, double* b_src, double* b_dst) {
 
 // this function assumes data is stored in col-major
 // if data is in row major, call it like matmul4x4(B, A, C)
-void matmul4x4(double *A, double *B, double *C) {
-    __m256d col[4], sum[4];
-    //load every column into registers
-    for(int i=0; i<4; i++)  
-      col[i] = _mm256_load_pd(&A[i*4]);
-    for(int i=0; i<4; i++) {
-        sum[i] = _mm256_setzero_pd();      
-        for(int j=0; j<4; j++) {
-            sum[i] = _mm256_add_pd(_mm256_mul_pd(_mm256_set1_pd(B[i*4+j]), col[j]), sum[i]);
-        }           
-    }
-    for(int i=0; i<4; i++) 
-      _mm256_store_pd(&C[i*4], sum[i]); 
-}
+//void matmul4x4(double *A, double *B, double *C) {
+ //   __m256d col[4], sum[4];
+  //  //load every column into registers
+   // for(int i=0; i<4; i++)  
+ //     col[i] = _mm256_load_pd(&A[i*4]);
+  //  for(int i=0; i<4; i++) {
+//        sum[i] = _mm256_setzero_pd();      
+ //       for(int j=0; j<4; j++) {
+  //          sum[i] = _mm256_add_pd(_mm256_mul_pd(_mm256_set1_pd(B[i*4+j]), col[j]), sum[i]);
+  //      }           
+   // }
+  //  for(int i=0; i<4; i++) 
+  //    _mm256_store_pd(&C[i*4], sum[i]); 
+//}
 
 /* This auxiliary subroutine performs a smaller dgemm operation
  *  C := C + A * B
@@ -198,7 +198,7 @@ t |       |  |  | |
   posix_memalign((void **)&A_block, 64, BLOCK_L1 * BLOCK_L1 * sizeof(double));
   posix_memalign((void **)&B_block, 64, BLOCK_L1 * BLOCK_L1 * sizeof(double));
 
-  // reorcder loops for cache efficiency
+  // reorder loops for cache efficiency
   for (int t = 0; t < lda; t += BLOCK_L2) 
   {
     // For each block column of B 
