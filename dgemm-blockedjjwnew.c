@@ -241,53 +241,59 @@ static inline void do_block (int lda, int M, int N, int K,int newM,int newN, dou
  * On exit, A and B maintain their input values. */  
 
  /*
-          s
+          j1
   _________________
   |       ------- | 
   |       |  |  | |
   |      i------- |  
-t |       |  |  | |
+k1 |       |  |  | |
   |       ------- |
   |          j    | 
   |               |
   |_______________| 
-  loop r and k are for accumulation
+  loop i1 and k are for accumulation
  */
 
  void square_dgemm (int lda, double* A, double* B, double*restrict C)
 {
 
-  double *A_block, *B_block;
+  double *A_block, *B_block;  
+  int BLOCK_L2M = 512;
+  int BLOCK_L2N = 512;
+  int BLOCK_L2K = 256;
+  int BLOCK_L1M = 256;
+  int BLOCK_L1N = 256;
+  int BLOCK_L1K = 128;
   posix_memalign((void **)&A_block, 64, BLOCK_L1 * BLOCK_L1 * sizeof(double));
   posix_memalign((void **)&B_block, 64, BLOCK_L1 * BLOCK_L1 * sizeof(double));
 
 
   // reorder loops for cache efficiency
-  for (int t = 0; t < lda; t += BLOCK_L2) 
+  for (int k1 = 0; k1 < lda; k1 += BLOCK_L2K) 
   {
     // For each block column of B 
-    for (int s = 0; s < lda; s += BLOCK_L2) 
+    for (int j1 = 0; j1 < lda; j1 += BLOCK_L2N) 
     {
       // For each block row of A 
-      for (int r = 0; r < lda; r += BLOCK_L2) 
+      for (int i1 = 0; i1 < lda; i1 += BLOCK_L2M) 
       {
         // compute end index of smaller block
-        int end_k = t + min(BLOCK_L2, lda-t);
-        int end_j = s + min(BLOCK_L2, lda-s);
-        int end_i = r + min(BLOCK_L2, lda-r);
+        int end_k = k1 + min(BLOCK_L2K, lda-k1);
+        int end_j = j1 + min(BLOCK_L2N, lda-j1);
+        int end_i = i1 + min(BLOCK_L2M, lda-i1);
 
-        for (int k = t; k < end_k; k += BLOCK_L1) 
+        for (int k = k1; k < end_k; k += BLOCK_L1K) 
         {
           // For each block column of B 
-          for (int j = s; j < end_j; j += BLOCK_L1) 
+          for (int j = j1; j < end_j; j += BLOCK_L1N) 
           {
             // For each block row of A
-            for (int i = r; i < end_i; i += BLOCK_L1) 
+            for (int i = i1; i < end_i; i += BLOCK_L1M) 
             {
-              // compute L1 block size
-              int K = min(BLOCK_L1, end_k-k);
-              int N = min(BLOCK_L1, end_j-j);
-              int M = min(BLOCK_L1, end_i-i);
+              // compute block size
+              int K = min(BLOCK_L1K, end_k-k);
+              int N = min(BLOCK_L1N, end_j-j);
+              int M = min(BLOCK_L1M, end_i-i);
 //	      printf("M,N,K:%d,%d,%d\n",M,N,K);
 //	      fflush( stdout );
               /* Performs a smaller dgemm operation

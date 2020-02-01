@@ -13,10 +13,8 @@ stdio.h
 -
 immintrin.h
 -
-stdlib.h
+xmmintrin.h
 -
-stdint.h
--
-math.h
+emmintrin.h
 -
 
