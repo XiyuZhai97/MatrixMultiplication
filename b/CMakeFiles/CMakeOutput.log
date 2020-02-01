@@ -1,0 +1,1055 @@
+The system is: Linux - 4.12.14-150.38-default - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/cray/pe/craype/2.6.2/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/3.14.4/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/cray/pe/craype/2.6.2/bin/CC 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/3.14.4/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_3b0f2/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_3b0f2.dir/build.make CMakeFiles/cmTC_3b0f2.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b0f2.dir/testCCompiler.c.o
+/opt/cray/pe/craype/2.6.2/bin/cc    -o CMakeFiles/cmTC_3b0f2.dir/testCCompiler.c.o   -c /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_3b0f2
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b0f2.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/cc      CMakeFiles/cmTC_3b0f2.dir/testCCompiler.c.o  -o cmTC_3b0f2 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_27d8f/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_27d8f.dir/build.make CMakeFiles/cmTC_27d8f.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o
+/opt/cray/pe/craype/2.6.2/bin/cc   -v -o CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o   -c /global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/share/cmake-3.14/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/8.3.0/bin/../snos/bin/gcc
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-8.3.0-201903122028.16ea96cb84a9a/configure --prefix=/opt/gcc/8.3.0/snos --disable-nls --libdir=/opt/gcc/8.3.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/8.3.0/snos/include/g++ --with-slibdir=/opt/gcc/8.3.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+gcc version 8.3.0 20190222 (Cray Inc.) (GCC) 
+COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include'
+ /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/cc1 -quiet -v -I /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include -I /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include -I /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include -I /opt/cray/pe/pmi/5.0.14/include -I /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include -I /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include -I /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include -I /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include -I /opt/cray-hss-devel/9.0.0/include -D __CRAYXC -D __CRAY_HASWELL -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=core-avx2 -auxbase-strip CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccZyHP1r.s
+GNU C17 (GCC) version 8.3.0 20190222 (Cray Inc.) (x86_64-suse-linux)
+	compiled by GNU C version 8.3.0 20190222 (Cray Inc.), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../x86_64-suse-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include
+ /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include
+ /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include
+ /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include
+ /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include
+ /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include
+ /opt/cray/pe/pmi/5.0.14/include
+ /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include
+ /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include
+ /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include
+ /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include
+ /opt/cray-hss-devel/9.0.0/include
+ /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include
+ /usr/local/include
+ /opt/gcc/8.3.0/snos/include
+ /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 8.3.0 20190222 (Cray Inc.) (x86_64-suse-linux)
+	compiled by GNU C version 8.3.0 20190222 (Cray Inc.), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 18c913d14c2df2724885adb77763cb60
+COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include'
+ as -v -I /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include -I /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include -I /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include -I /opt/cray/pe/pmi/5.0.14/include -I /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include -I /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include -I /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include -I /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include -I /opt/cray-hss-devel/9.0.0/include --64 -o CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o /tmp/ccZyHP1r.s
+GNU assembler version 2.32.0 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.32.0.20190909-6.8
+COMPILER_PATH=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include'
+Linking C executable cmTC_27d8f
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27d8f.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/cc     -v CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o  -o cmTC_27d8f 
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/8.3.0/bin/../snos/bin/gcc
+COLLECT_LTO_WRAPPER=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-8.3.0-201903122028.16ea96cb84a9a/configure --prefix=/opt/gcc/8.3.0/snos --disable-nls --libdir=/opt/gcc/8.3.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/8.3.0/snos/include/g++ --with-slibdir=/opt/gcc/8.3.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+gcc version 8.3.0 20190222 (Cray Inc.) (GCC) 
+COMPILER_PATH=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_27d8f' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib' '-L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64' '-L/opt/cray/pe/atp/2.1.3/libApp'
+ /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/collect2 -plugin /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/liblto_plugin.so -plugin-opt=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwhfyED.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_27d8f /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtbegin.o -L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib -L/opt/cray/dmapp/default/lib64 -L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib -L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64 -L/opt/cray/pe/atp/2.1.3/libApp -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0 -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../.. CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic --no-as-needed -lAtpSigHandler -lAtpSigHCommData --undefined=_ATP_Data_Globals --undefined=__atpHandlerInstall -lrca -Ttext-segment=0x20000000 -zmax-page-size=0x20000000 --whole-archive -lhugetlbfs --no-whole-archive -lz --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed --as-needed -lmpich_gnu_82 --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtend.o /usr/lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_27d8f' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib' '-L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64' '-L/opt/cray/pe/atp/2.1.3/libApp'
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include]
+    add: [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include]
+    add: [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include]
+    add: [/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include]
+    add: [/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include]
+    add: [/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include]
+    add: [/opt/cray/pe/pmi/5.0.14/include]
+    add: [/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include]
+    add: [/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include]
+    add: [/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include]
+    add: [/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include]
+    add: [/opt/cray-hss-devel/9.0.0/include]
+    add: [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include]
+    add: [/usr/local/include]
+    add: [/opt/gcc/8.3.0/snos/include]
+    add: [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include] ==> [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include]
+  collapse include dir [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include] ==> [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include]
+  collapse include dir [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include] ==> [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include]
+  collapse include dir [/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include] ==> [/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include]
+  collapse include dir [/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include] ==> [/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include]
+  collapse include dir [/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include] ==> [/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include]
+  collapse include dir [/opt/cray/pe/pmi/5.0.14/include] ==> [/opt/cray/pe/pmi/5.0.14/include]
+  collapse include dir [/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include] ==> [/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include]
+  collapse include dir [/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include] ==> [/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include]
+  collapse include dir [/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include] ==> [/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include]
+  collapse include dir [/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include] ==> [/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include]
+  collapse include dir [/opt/cray-hss-devel/9.0.0/include] ==> [/opt/cray-hss-devel/9.0.0/include]
+  collapse include dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include] ==> [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/opt/gcc/8.3.0/snos/include] ==> [/opt/gcc/8.3.0/snos/include]
+  collapse include dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed] ==> [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include;/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include;/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include;/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include;/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include;/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include;/opt/cray/pe/pmi/5.0.14/include;/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include;/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include;/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include;/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include;/opt/cray-hss-devel/9.0.0/include;/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include;/usr/local/include;/opt/gcc/8.3.0/snos/include;/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_27d8f/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_27d8f.dir/build.make CMakeFiles/cmTC_27d8f.dir/build]
+  ignore line: [gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/cray/pe/craype/2.6.2/bin/cc   -v -o CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o   -c /global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/share/cmake-3.14/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/gcc/8.3.0/bin/../snos/bin/gcc]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../cray-gcc-8.3.0-201903122028.16ea96cb84a9a/configure --prefix=/opt/gcc/8.3.0/snos --disable-nls --libdir=/opt/gcc/8.3.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/8.3.0/snos/include/g++ --with-slibdir=/opt/gcc/8.3.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 20190222 (Cray Inc.) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include']
+  ignore line: [ /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/cc1 -quiet -v -I /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include -I /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include -I /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include -I /opt/cray/pe/pmi/5.0.14/include -I /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include -I /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include -I /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include -I /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include -I /opt/cray-hss-devel/9.0.0/include -D __CRAYXC -D __CRAY_HASWELL -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=core-avx2 -auxbase-strip CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccZyHP1r.s]
+  ignore line: [GNU C17 (GCC) version 8.3.0 20190222 (Cray Inc.) (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 8.3.0 20190222 (Cray Inc.), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../x86_64-suse-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include]
+  ignore line: [ /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include]
+  ignore line: [ /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include]
+  ignore line: [ /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include]
+  ignore line: [ /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include]
+  ignore line: [ /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include]
+  ignore line: [ /opt/cray/pe/pmi/5.0.14/include]
+  ignore line: [ /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include]
+  ignore line: [ /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include]
+  ignore line: [ /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include]
+  ignore line: [ /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include]
+  ignore line: [ /opt/cray-hss-devel/9.0.0/include]
+  ignore line: [ /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /opt/gcc/8.3.0/snos/include]
+  ignore line: [ /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 8.3.0 20190222 (Cray Inc.) (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 8.3.0 20190222 (Cray Inc.), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 18c913d14c2df2724885adb77763cb60]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include']
+  ignore line: [ as -v -I /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include -I /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include -I /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include -I /opt/cray/pe/pmi/5.0.14/include -I /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include -I /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include -I /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include -I /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include -I /opt/cray-hss-devel/9.0.0/include --64 -o CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o /tmp/ccZyHP1r.s]
+  ignore line: [GNU assembler version 2.32.0 (x86_64-suse-linux) using BFD version (GNU Binutils]
+  ignore line: [ SUSE Linux Enterprise 15) 2.32.0.20190909-6.8]
+  ignore line: [COMPILER_PATH=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/]
+  ignore line: [LIBRARY_PATH=/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include']
+  ignore line: [Linking C executable cmTC_27d8f]
+  ignore line: [/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27d8f.dir/link.txt --verbose=1]
+  ignore line: [/opt/cray/pe/craype/2.6.2/bin/cc     -v CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o  -o cmTC_27d8f ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/gcc/8.3.0/bin/../snos/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../cray-gcc-8.3.0-201903122028.16ea96cb84a9a/configure --prefix=/opt/gcc/8.3.0/snos --disable-nls --libdir=/opt/gcc/8.3.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/8.3.0/snos/include/g++ --with-slibdir=/opt/gcc/8.3.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 20190222 (Cray Inc.) (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/]
+  ignore line: [LIBRARY_PATH=/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_27d8f' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib' '-L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64' '-L/opt/cray/pe/atp/2.1.3/libApp']
+  link line: [ /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/collect2 -plugin /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/liblto_plugin.so -plugin-opt=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwhfyED.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_27d8f /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtbegin.o -L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib -L/opt/cray/dmapp/default/lib64 -L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib -L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64 -L/opt/cray/pe/atp/2.1.3/libApp -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0 -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../.. CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic --no-as-needed -lAtpSigHandler -lAtpSigHCommData --undefined=_ATP_Data_Globals --undefined=__atpHandlerInstall -lrca -Ttext-segment=0x20000000 -zmax-page-size=0x20000000 --whole-archive -lhugetlbfs --no-whole-archive -lz --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed --as-needed -lmpich_gnu_82 --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtend.o /usr/lib/../lib64/crtn.o]
+    arg [/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccwhfyED.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_27d8f] ==> ignore
+    arg [/usr/lib/../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/../lib64/crti.o] ==> ignore
+    arg [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtbegin.o] ==> ignore
+    arg [-L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib] ==> dir [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib]
+    arg [-L/opt/cray/dmapp/default/lib64] ==> dir [/opt/cray/dmapp/default/lib64]
+    arg [-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib] ==> dir [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib]
+    arg [-L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64] ==> dir [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64]
+    arg [-L/opt/cray/pe/atp/2.1.3/libApp] ==> dir [/opt/cray/pe/atp/2.1.3/libApp]
+    arg [-L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0] ==> dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0]
+    arg [-L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64] ==> dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../..] ==> dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../..]
+    arg [CMakeFiles/cmTC_27d8f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-rpath=/opt/cray/pe/gcc-libs] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--no-as-needed] ==> ignore
+    arg [-lAtpSigHandler] ==> lib [AtpSigHandler]
+    arg [-lAtpSigHCommData] ==> lib [AtpSigHCommData]
+    arg [--undefined=_ATP_Data_Globals] ==> ignore
+    arg [--undefined=__atpHandlerInstall] ==> ignore
+    arg [-lrca] ==> lib [rca]
+    arg [-Ttext-segment=0x20000000] ==> ignore
+    arg [-zmax-page-size=0x20000000] ==> ignore
+    arg [--whole-archive] ==> ignore
+    arg [-lhugetlbfs] ==> lib [hugetlbfs]
+    arg [--no-whole-archive] ==> ignore
+    arg [-lz] ==> lib [z]
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_82_mpi] ==> lib [sci_gnu_82_mpi]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_82] ==> lib [sci_gnu_82]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmpich_gnu_82] ==> lib [mpich_gnu_82]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmvec] ==> lib [mvec]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--no-as-needed] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtend.o] ==> ignore
+    arg [/usr/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib] ==> [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib]
+  collapse library dir [/opt/cray/dmapp/default/lib64] ==> [/opt/cray/dmapp/default/lib64]
+  collapse library dir [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib] ==> [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib]
+  collapse library dir [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64] ==> [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64]
+  collapse library dir [/opt/cray/pe/atp/2.1.3/libApp] ==> [/opt/cray/pe/atp/2.1.3/libApp]
+  collapse library dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0] ==> [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0]
+  collapse library dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64] ==> [/opt/gcc/8.3.0/snos/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../..] ==> [/opt/gcc/8.3.0/snos/lib]
+  implicit libs: [AtpSigHandler;AtpSigHCommData;rca;hugetlbfs;z;sci_gnu_82_mpi;sci_gnu_82;mpich_gnu_82;gfortran;quadmath;mvec;m;pthread;gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib;/opt/cray/dmapp/default/lib64;/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib;/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64;/opt/cray/pe/atp/2.1.3/libApp;/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0;/opt/gcc/8.3.0/snos/lib64;/lib64;/usr/lib64;/opt/gcc/8.3.0/snos/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_829c4/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_829c4.dir/build.make CMakeFiles/cmTC_829c4.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_829c4.dir/feature_tests.c.o
+/opt/cray/pe/craype/2.6.2/bin/cc   -std=c11 -o CMakeFiles/cmTC_829c4.dir/feature_tests.c.o   -c /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/feature_tests.c
+Linking C executable cmTC_829c4
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_829c4.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/cc      CMakeFiles/cmTC_829c4.dir/feature_tests.c.o  -o cmTC_829c4 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_7a8c5/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_7a8c5.dir/build.make CMakeFiles/cmTC_7a8c5.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a8c5.dir/feature_tests.c.o
+/opt/cray/pe/craype/2.6.2/bin/cc   -std=c99 -o CMakeFiles/cmTC_7a8c5.dir/feature_tests.c.o   -c /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/feature_tests.c
+Linking C executable cmTC_7a8c5
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a8c5.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/cc      CMakeFiles/cmTC_7a8c5.dir/feature_tests.c.o  -o cmTC_7a8c5 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_08651/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_08651.dir/build.make CMakeFiles/cmTC_08651.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08651.dir/feature_tests.c.o
+/opt/cray/pe/craype/2.6.2/bin/cc   -std=c90 -o CMakeFiles/cmTC_08651.dir/feature_tests.c.o   -c /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/feature_tests.c
+Linking C executable cmTC_08651
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08651.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/cc      CMakeFiles/cmTC_08651.dir/feature_tests.c.o  -o cmTC_08651 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_4d06f/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_4d06f.dir/build.make CMakeFiles/cmTC_4d06f.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4d06f.dir/testCXXCompiler.cxx.o
+/opt/cray/pe/craype/2.6.2/bin/CC     -o CMakeFiles/cmTC_4d06f.dir/testCXXCompiler.cxx.o -c /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_4d06f
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d06f.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/CC       CMakeFiles/cmTC_4d06f.dir/testCXXCompiler.cxx.o  -o cmTC_4d06f 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_e3617/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_e3617.dir/build.make CMakeFiles/cmTC_e3617.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o
+/opt/cray/pe/craype/2.6.2/bin/CC    -v -o CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o -c /global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/8.3.0/bin/../snos/bin/g++
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-8.3.0-201903122028.16ea96cb84a9a/configure --prefix=/opt/gcc/8.3.0/snos --disable-nls --libdir=/opt/gcc/8.3.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/8.3.0/snos/include/g++ --with-slibdir=/opt/gcc/8.3.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+gcc version 8.3.0 20190222 (Cray Inc.) (GCC) 
+COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc'
+ /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/cc1plus -quiet -v -I /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include -I /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include -I /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include -I /opt/cray/pe/pmi/5.0.14/include -I /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include -I /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include -I /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include -I /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include -I /opt/cray-hss-devel/9.0.0/include -D_GNU_SOURCE -D __CRAYXC -D __CRAY_HASWELL -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=core-avx2 -auxbase-strip CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccBT3K8o.s
+GNU C++14 (GCC) version 8.3.0 20190222 (Cray Inc.) (x86_64-suse-linux)
+	compiled by GNU C version 8.3.0 20190222 (Cray Inc.), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../x86_64-suse-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include
+ /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include
+ /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include
+ /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include
+ /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include
+ /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include
+ /opt/cray/pe/pmi/5.0.14/include
+ /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include
+ /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include
+ /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include
+ /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include
+ /opt/cray-hss-devel/9.0.0/include
+ /opt/gcc/8.3.0/snos/include/g++
+ /opt/gcc/8.3.0/snos/include/g++/x86_64-suse-linux
+ /opt/gcc/8.3.0/snos/include/g++/backward
+ /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include
+ /usr/local/include
+ /opt/gcc/8.3.0/snos/include
+ /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 8.3.0 20190222 (Cray Inc.) (x86_64-suse-linux)
+	compiled by GNU C version 8.3.0 20190222 (Cray Inc.), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: a65710110c95231a70a80de404252610
+COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc'
+ as -v -I /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include -I /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include -I /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include -I /opt/cray/pe/pmi/5.0.14/include -I /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include -I /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include -I /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include -I /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include -I /opt/cray-hss-devel/9.0.0/include --64 -o CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccBT3K8o.s
+GNU assembler version 2.32.0 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.32.0.20190909-6.8
+COMPILER_PATH=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc'
+Linking CXX executable cmTC_e3617
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3617.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/CC      -v CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e3617 
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/8.3.0/bin/../snos/bin/g++
+COLLECT_LTO_WRAPPER=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-8.3.0-201903122028.16ea96cb84a9a/configure --prefix=/opt/gcc/8.3.0/snos --disable-nls --libdir=/opt/gcc/8.3.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/8.3.0/snos/include/g++ --with-slibdir=/opt/gcc/8.3.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+gcc version 8.3.0 20190222 (Cray Inc.) (GCC) 
+COMPILER_PATH=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_e3617' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib' '-L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64' '-L/opt/cray/pe/atp/2.1.3/libApp' '-shared-libgcc'
+ /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/collect2 -plugin /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/liblto_plugin.so -plugin-opt=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEnBCwx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e3617 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtbegin.o -L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib -L/opt/cray/dmapp/default/lib64 -L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib -L/opt/cray/dmapp/default/lib64 -L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib -L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64 -L/opt/cray/pe/atp/2.1.3/libApp -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0 -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../.. CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic --no-as-needed -lAtpSigHandler -lAtpSigHCommData --undefined=_ATP_Data_Globals --undefined=__atpHandlerInstall -lrca -Ttext-segment=0x20000000 -zmax-page-size=0x20000000 --whole-archive -lhugetlbfs --no-whole-archive -lz --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed --as-needed -lmpich_gnu_82 --no-as-needed --as-needed -lmpichcxx_gnu_82 --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtend.o /usr/lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_e3617' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib' '-L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64' '-L/opt/cray/pe/atp/2.1.3/libApp' '-shared-libgcc'
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include]
+    add: [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include]
+    add: [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include]
+    add: [/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include]
+    add: [/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include]
+    add: [/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include]
+    add: [/opt/cray/pe/pmi/5.0.14/include]
+    add: [/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include]
+    add: [/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include]
+    add: [/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include]
+    add: [/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include]
+    add: [/opt/cray-hss-devel/9.0.0/include]
+    add: [/opt/gcc/8.3.0/snos/include/g++]
+    add: [/opt/gcc/8.3.0/snos/include/g++/x86_64-suse-linux]
+    add: [/opt/gcc/8.3.0/snos/include/g++/backward]
+    add: [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include]
+    add: [/usr/local/include]
+    add: [/opt/gcc/8.3.0/snos/include]
+    add: [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include] ==> [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include]
+  collapse include dir [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include] ==> [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include]
+  collapse include dir [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include] ==> [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include]
+  collapse include dir [/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include] ==> [/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include]
+  collapse include dir [/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include] ==> [/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include]
+  collapse include dir [/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include] ==> [/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include]
+  collapse include dir [/opt/cray/pe/pmi/5.0.14/include] ==> [/opt/cray/pe/pmi/5.0.14/include]
+  collapse include dir [/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include] ==> [/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include]
+  collapse include dir [/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include] ==> [/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include]
+  collapse include dir [/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include] ==> [/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include]
+  collapse include dir [/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include] ==> [/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include]
+  collapse include dir [/opt/cray-hss-devel/9.0.0/include] ==> [/opt/cray-hss-devel/9.0.0/include]
+  collapse include dir [/opt/gcc/8.3.0/snos/include/g++] ==> [/opt/gcc/8.3.0/snos/include/g++]
+  collapse include dir [/opt/gcc/8.3.0/snos/include/g++/x86_64-suse-linux] ==> [/opt/gcc/8.3.0/snos/include/g++/x86_64-suse-linux]
+  collapse include dir [/opt/gcc/8.3.0/snos/include/g++/backward] ==> [/opt/gcc/8.3.0/snos/include/g++/backward]
+  collapse include dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include] ==> [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/opt/gcc/8.3.0/snos/include] ==> [/opt/gcc/8.3.0/snos/include]
+  collapse include dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed] ==> [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include;/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include;/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include;/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include;/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include;/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include;/opt/cray/pe/pmi/5.0.14/include;/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include;/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include;/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include;/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include;/opt/cray-hss-devel/9.0.0/include;/opt/gcc/8.3.0/snos/include/g++;/opt/gcc/8.3.0/snos/include/g++/x86_64-suse-linux;/opt/gcc/8.3.0/snos/include/g++/backward;/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include;/usr/local/include;/opt/gcc/8.3.0/snos/include;/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_e3617/fast ]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_e3617.dir/build.make CMakeFiles/cmTC_e3617.dir/build]
+  ignore line: [gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/cray/pe/craype/2.6.2/bin/CC    -v -o CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o -c /global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/gcc/8.3.0/bin/../snos/bin/g++]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../cray-gcc-8.3.0-201903122028.16ea96cb84a9a/configure --prefix=/opt/gcc/8.3.0/snos --disable-nls --libdir=/opt/gcc/8.3.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/8.3.0/snos/include/g++ --with-slibdir=/opt/gcc/8.3.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 20190222 (Cray Inc.) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc']
+  ignore line: [ /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/cc1plus -quiet -v -I /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include -I /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include -I /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include -I /opt/cray/pe/pmi/5.0.14/include -I /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include -I /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include -I /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include -I /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include -I /opt/cray-hss-devel/9.0.0/include -D_GNU_SOURCE -D __CRAYXC -D __CRAY_HASWELL -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=core-avx2 -auxbase-strip CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccBT3K8o.s]
+  ignore line: [GNU C++14 (GCC) version 8.3.0 20190222 (Cray Inc.) (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 8.3.0 20190222 (Cray Inc.), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../x86_64-suse-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include]
+  ignore line: [ /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include]
+  ignore line: [ /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include]
+  ignore line: [ /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include]
+  ignore line: [ /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include]
+  ignore line: [ /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include]
+  ignore line: [ /opt/cray/pe/pmi/5.0.14/include]
+  ignore line: [ /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include]
+  ignore line: [ /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include]
+  ignore line: [ /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include]
+  ignore line: [ /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include]
+  ignore line: [ /opt/cray-hss-devel/9.0.0/include]
+  ignore line: [ /opt/gcc/8.3.0/snos/include/g++]
+  ignore line: [ /opt/gcc/8.3.0/snos/include/g++/x86_64-suse-linux]
+  ignore line: [ /opt/gcc/8.3.0/snos/include/g++/backward]
+  ignore line: [ /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /opt/gcc/8.3.0/snos/include]
+  ignore line: [ /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 8.3.0 20190222 (Cray Inc.) (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 8.3.0 20190222 (Cray Inc.), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: a65710110c95231a70a80de404252610]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc']
+  ignore line: [ as -v -I /opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include -I /opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include -I /opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include -I /opt/cray/pe/pmi/5.0.14/include -I /opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include -I /opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include -I /opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include -I /opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include -I /opt/cray-hss-devel/9.0.0/include --64 -o CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccBT3K8o.s]
+  ignore line: [GNU assembler version 2.32.0 (x86_64-suse-linux) using BFD version (GNU Binutils]
+  ignore line: [ SUSE Linux Enterprise 15) 2.32.0.20190909-6.8]
+  ignore line: [COMPILER_PATH=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/]
+  ignore line: [LIBRARY_PATH=/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc']
+  ignore line: [Linking CXX executable cmTC_e3617]
+  ignore line: [/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3617.dir/link.txt --verbose=1]
+  ignore line: [/opt/cray/pe/craype/2.6.2/bin/CC      -v CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_e3617 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/gcc/8.3.0/bin/../snos/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../cray-gcc-8.3.0-201903122028.16ea96cb84a9a/configure --prefix=/opt/gcc/8.3.0/snos --disable-nls --libdir=/opt/gcc/8.3.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/8.3.0/snos/include/g++ --with-slibdir=/opt/gcc/8.3.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 20190222 (Cray Inc.) (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/]
+  ignore line: [LIBRARY_PATH=/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=core-avx2' '-D' '__CRAYXC' '-D' '__CRAY_HASWELL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_e3617' '-I' '/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.56-7.0.1.1_4.30__g2e60a7e4.ari/include' '-I' '/opt/cray/xpmem/2.2.19-7.0.1.1_3.13__gdcf436c.ari/include' '-I' '/opt/cray/gni-headers/5.0.12.0-7.0.1.1_6.17__g3b1768f.ari/include' '-I' '/opt/cray/pe/pmi/5.0.14/include' '-I' '/opt/cray/ugni/6.0.14.0-7.0.1.1_7.19__ge78e5b0.ari/include' '-I' '/opt/cray/udreg/2.3.2-7.0.1.1_3.16__g8175d3d.ari/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.1.1_4.9__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.6-7.0.1.1_5.21__gb641b12.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib' '-L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64' '-L/opt/cray/pe/atp/2.1.3/libApp' '-shared-libgcc']
+  link line: [ /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/collect2 -plugin /opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/liblto_plugin.so -plugin-opt=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEnBCwx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e3617 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtbegin.o -L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib -L/opt/cray/dmapp/default/lib64 -L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib -L/opt/cray/dmapp/default/lib64 -L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib -L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64 -L/opt/cray/pe/atp/2.1.3/libApp -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0 -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../.. CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic --no-as-needed -lAtpSigHandler -lAtpSigHCommData --undefined=_ATP_Data_Globals --undefined=__atpHandlerInstall -lrca -Ttext-segment=0x20000000 -zmax-page-size=0x20000000 --whole-archive -lhugetlbfs --no-whole-archive -lz --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed --as-needed -lmpich_gnu_82 --no-as-needed --as-needed -lmpichcxx_gnu_82 --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtend.o /usr/lib/../lib64/crtn.o]
+    arg [/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/gcc/8.3.0/snos/libexec/gcc/x86_64-suse-linux/8.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccEnBCwx.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_e3617] ==> ignore
+    arg [/usr/lib/../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/../lib64/crti.o] ==> ignore
+    arg [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtbegin.o] ==> ignore
+    arg [-L/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib] ==> dir [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib]
+    arg [-L/opt/cray/dmapp/default/lib64] ==> dir [/opt/cray/dmapp/default/lib64]
+    arg [-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib] ==> dir [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib]
+    arg [-L/opt/cray/dmapp/default/lib64] ==> dir [/opt/cray/dmapp/default/lib64]
+    arg [-L/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib] ==> dir [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib]
+    arg [-L/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64] ==> dir [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64]
+    arg [-L/opt/cray/pe/atp/2.1.3/libApp] ==> dir [/opt/cray/pe/atp/2.1.3/libApp]
+    arg [-L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0] ==> dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0]
+    arg [-L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64] ==> dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../..] ==> dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../..]
+    arg [CMakeFiles/cmTC_e3617.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-rpath=/opt/cray/pe/gcc-libs] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [--no-as-needed] ==> ignore
+    arg [-lAtpSigHandler] ==> lib [AtpSigHandler]
+    arg [-lAtpSigHCommData] ==> lib [AtpSigHCommData]
+    arg [--undefined=_ATP_Data_Globals] ==> ignore
+    arg [--undefined=__atpHandlerInstall] ==> ignore
+    arg [-lrca] ==> lib [rca]
+    arg [-Ttext-segment=0x20000000] ==> ignore
+    arg [-zmax-page-size=0x20000000] ==> ignore
+    arg [--whole-archive] ==> ignore
+    arg [-lhugetlbfs] ==> lib [hugetlbfs]
+    arg [--no-whole-archive] ==> ignore
+    arg [-lz] ==> lib [z]
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_82_mpi] ==> lib [sci_gnu_82_mpi]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_82] ==> lib [sci_gnu_82]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmpich_gnu_82] ==> lib [mpich_gnu_82]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmpichcxx_gnu_82] ==> lib [mpichcxx_gnu_82]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmvec] ==> lib [mvec]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--no-as-needed] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/crtend.o] ==> ignore
+    arg [/usr/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib] ==> [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib]
+  collapse library dir [/opt/cray/dmapp/default/lib64] ==> [/opt/cray/dmapp/default/lib64]
+  collapse library dir [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib] ==> [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib]
+  collapse library dir [/opt/cray/dmapp/default/lib64] ==> [/opt/cray/dmapp/default/lib64]
+  collapse library dir [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib] ==> [/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib]
+  collapse library dir [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64] ==> [/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64]
+  collapse library dir [/opt/cray/pe/atp/2.1.3/libApp] ==> [/opt/cray/pe/atp/2.1.3/libApp]
+  collapse library dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0] ==> [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0]
+  collapse library dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../../../lib64] ==> [/opt/gcc/8.3.0/snos/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0/../../..] ==> [/opt/gcc/8.3.0/snos/lib]
+  implicit libs: [AtpSigHandler;AtpSigHCommData;rca;hugetlbfs;z;sci_gnu_82_mpi;sci_gnu_82;mpich_gnu_82;mpichcxx_gnu_82;gfortran;quadmath;mvec;m;pthread;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/opt/cray/pe/libsci/19.06.1/GNU/8.1/x86_64/lib;/opt/cray/dmapp/default/lib64;/opt/cray/pe/mpt/7.7.10/gni/mpich-gnu/8.2/lib;/opt/cray/rca/2.2.20-7.0.1.1_4.25__g8e3fb5b.ari/lib64;/opt/cray/pe/atp/2.1.3/libApp;/opt/gcc/8.3.0/snos/lib/gcc/x86_64-suse-linux/8.3.0;/opt/gcc/8.3.0/snos/lib64;/lib64;/usr/lib64;/opt/gcc/8.3.0/snos/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++2a] compiler features compiled with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c8fe7/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_c8fe7.dir/build.make CMakeFiles/cmTC_c8fe7.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8fe7.dir/feature_tests.cxx.o
+/opt/cray/pe/craype/2.6.2/bin/CC    -std=c++2a -o CMakeFiles/cmTC_c8fe7.dir/feature_tests.cxx.o -c /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c8fe7
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8fe7.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/CC       CMakeFiles/cmTC_c8fe7.dir/feature_tests.cxx.o  -o cmTC_c8fe7 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++17] compiler features compiled with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_0213f/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_0213f.dir/build.make CMakeFiles/cmTC_0213f.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0213f.dir/feature_tests.cxx.o
+/opt/cray/pe/craype/2.6.2/bin/CC    -std=c++17 -o CMakeFiles/cmTC_0213f.dir/feature_tests.cxx.o -c /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_0213f
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0213f.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/CC       CMakeFiles/cmTC_0213f.dir/feature_tests.cxx.o  -o cmTC_0213f 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_799c1/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_799c1.dir/build.make CMakeFiles/cmTC_799c1.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_799c1.dir/feature_tests.cxx.o
+/opt/cray/pe/craype/2.6.2/bin/CC    -std=c++14 -o CMakeFiles/cmTC_799c1.dir/feature_tests.cxx.o -c /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_799c1
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_799c1.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/CC       CMakeFiles/cmTC_799c1.dir/feature_tests.cxx.o  -o cmTC_799c1 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ace39/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_ace39.dir/build.make CMakeFiles/cmTC_ace39.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ace39.dir/feature_tests.cxx.o
+/opt/cray/pe/craype/2.6.2/bin/CC    -std=c++11 -o CMakeFiles/cmTC_ace39.dir/feature_tests.cxx.o -c /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ace39
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ace39.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/CC       CMakeFiles/cmTC_ace39.dir/feature_tests.cxx.o  -o cmTC_ace39 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1db48/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_1db48.dir/build.make CMakeFiles/cmTC_1db48.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1db48.dir/feature_tests.cxx.o
+/opt/cray/pe/craype/2.6.2/bin/CC    -std=c++98 -o CMakeFiles/cmTC_1db48.dir/feature_tests.cxx.o -c /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_1db48
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1db48.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/CC       CMakeFiles/cmTC_1db48.dir/feature_tests.cxx.o  -o cmTC_1db48 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the function sgemm_ exists passed with the following output:
+Change Dir: /global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c233f/fast 
+/usr/bin/gmake -f CMakeFiles/cmTC_c233f.dir/build.make CMakeFiles/cmTC_c233f.dir/build
+gmake[1]: Entering directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c233f.dir/CheckFunctionExists.c.o
+/opt/cray/pe/craype/2.6.2/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_   -o CMakeFiles/cmTC_c233f.dir/CheckFunctionExists.c.o   -c /global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c233f
+/global/common/sw/cray/cnl7/haswell/cmake/3.14.4/gcc/8.2.0/2hef55n/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c233f.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.6.2/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_    CMakeFiles/cmTC_c233f.dir/CheckFunctionExists.c.o  -o cmTC_c233f 
+gmake[1]: Leaving directory '/global/u1/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/CMakeTmp'
+
+

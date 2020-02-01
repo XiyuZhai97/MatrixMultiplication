@@ -6,9 +6,6 @@
 const char *dgemm_desc = "Simple blocked dgemm.";
 #pragma GCC optimize(3,"Ofast","inline","unroll-loops","prefetch-loop-arrays")
 
-#define BLOCK_L1 256
-#define BLOCK_L2 512
-
 #define ARRAY(A,i,j) (A)[(j)*lda + (i)]
 #define min(a,b) (((a)<(b))?(a):(b))
 
@@ -81,30 +78,11 @@ static inline void copy_b (int lda, const int K, double* b_src, double* b_dst) {
   }
 }
 
-// this function assumes data is stored in col-major
-// if data is in row major, call it like matmul4x4(B, A, C)
-//void matmul4x4(double *A, double *B, double *C) {
- //   __m256d col[4], sum[4];
-  //  //load every column into registers
-   // for(int i=0; i<4; i++)  
- //     col[i] = _mm256_load_pd(&A[i*4]);
-  //  for(int i=0; i<4; i++) {
-//        sum[i] = _mm256_setzero_pd();      
- //       for(int j=0; j<4; j++) {
-  //          sum[i] = _mm256_add_pd(_mm256_mul_pd(_mm256_set1_pd(B[i*4+j]), col[j]), sum[i]);
-  //      }           
-   // }
-  //  for(int i=0; i<4; i++) 
-  //    _mm256_store_pd(&C[i*4], sum[i]); 
-//}
-
 /* This auxiliary subroutine performs a smaller dgemm operation
  *  C := C + A * B
  * where C is M-by-N, A is M-by-K, and B is K-by-N. */
 static inline void do_block (int lda, int M, int N, int K, double* A, double* B, double* C, double* A_block, double* B_block)
 {
-  //double A_block[M*K], B_block[K*N];
-  //double *A_block, *B_block;
   double *a_ptr, *b_ptr, *c;
 
   int residue1 = M % 4;
@@ -195,35 +173,42 @@ t |       |  |  | |
 {
 
   double *A_block, *B_block;
-  posix_memalign((void **)&A_block, 64, BLOCK_L1 * BLOCK_L1 * sizeof(double));
-  posix_memalign((void **)&B_block, 64, BLOCK_L1 * BLOCK_L1 * sizeof(double));
-
+  int BLOCK_L2M = 512;
+  int BLOCK_L2N = 512;
+  int BLOCK_L2K = 256;
+  int BLOCK_L1M = 256;
+  int BLOCK_L1N = 256;
+  int BLOCK_L1K = 128;
+  posix_memalign((void **)&A_block, 64, BLOCK_L1M * BLOCK_L1K * 
+sizeof(double));
+  posix_memalign((void **)&B_block, 64, BLOCK_L1K * BLOCK_L1N * 
+sizeof(double));
   // reorder loops for cache efficiency
-  for (int t = 0; t < lda; t += BLOCK_L2) 
+  for (int t = 0; t < lda; t += BLOCK_L2K) 
   {
     // For each block column of B 
-    for (int s = 0; s < lda; s += BLOCK_L2) 
+    for (int s = 0; s < lda; s += BLOCK_L2N) 
     {
       // For each block row of A 
-      for (int r = 0; r < lda; r += BLOCK_L2) 
+      for (int r = 0; r < lda; r += BLOCK_L2M) 
       {
         // compute end index of smaller block
-        int end_k = t + min(BLOCK_L2, lda-t);
-        int end_j = s + min(BLOCK_L2, lda-s);
-        int end_i = r + min(BLOCK_L2, lda-r);
+        int end_k = t + min(BLOCK_L2K, lda-t);
+        int end_j = s + min(BLOCK_L2N, lda-s);
+        int end_i = r + min(BLOCK_L2M, lda-r);
 
-        for (int k = t; k < end_k; k += BLOCK_L1) 
+        for (int k = t; k < end_k; k += BLOCK_L1K) 
         {
           // For each block column of B 
-          for (int j = s; j < end_j; j += BLOCK_L1) 
+          for (int j = s; j < end_j; j += BLOCK_L1N) 
           {
             // For each block row of A
-            for (int i = r; i < end_i; i += BLOCK_L1) 
+            for (int i = r; i < end_i; i += BLOCK_L1M) 
             {
               // compute block size
-              int K = min(BLOCK_L1, end_k-k);
-              int N = min(BLOCK_L1, end_j-j);
-              int M = min(BLOCK_L1, end_i-i);
+              int K = min(BLOCK_L1K, end_k-k);
+              int N = min(BLOCK_L1N, end_j-j);
+              int M = min(BLOCK_L1M, end_i-i);
               /* Performs a smaller dgemm operation
                *  C' := C' + A' * B'
                * where C' is M-by-N, A' is M-by-K, and B' is K-by-N. */

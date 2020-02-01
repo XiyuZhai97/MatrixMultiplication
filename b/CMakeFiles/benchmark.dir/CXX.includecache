@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/global/homes/x/xiyu49/workspace/MatrixMultiplication/benchmark.cpp
+cstdlib
+-
+cstdio
+-
+cstring
+-
+cfloat
+-
+cmath
+-
+vector
+-
+random
+-
+chrono
+-
+
