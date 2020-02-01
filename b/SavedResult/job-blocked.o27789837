@@ -1,0 +1,29 @@
+Description:	New with boundary and different size in MNK.
+
+Size: 31	Mflop/s:  10230.4	Percentage: 27.80
+Size: 32	Mflop/s:  11311.1	Percentage: 30.74
+Size: 96	Mflop/s:    13491	Percentage: 36.66
+Size: 97	Mflop/s:  12730.6	Percentage: 34.59
+Size: 127	Mflop/s:    13503	Percentage: 36.69
+Size: 128	Mflop/s:  13498.1	Percentage: 36.68
+Size: 129	Mflop/s:  12655.5	Percentage: 34.39
+Size: 191	Mflop/s:  13917.8	Percentage: 37.82
+Size: 192	Mflop/s:  14109.9	Percentage: 38.34
+Size: 229	Mflop/s:  13839.3	Percentage: 37.61
+Size: 255	Mflop/s:  13500.3	Percentage: 36.69
+Size: 256	Mflop/s:  14109.9	Percentage: 38.34
+Size: 257	Mflop/s:  12785.4	Percentage: 34.74
+Size: 319	Mflop/s:  13758.6	Percentage: 37.39
+Size: 320	Mflop/s:  13804.1	Percentage: 37.51
+Size: 321	Mflop/s:  13620.2	Percentage: 37.01
+Size: 417	Mflop/s:  13932.8	Percentage: 37.86
+Size: 479	Mflop/s:  14131.8	Percentage: 38.40
+Size: 480	Mflop/s:  14208.3	Percentage: 38.61
+Size: 511	Mflop/s:  13433.8	Percentage: 36.50
+Size: 512	Mflop/s:  13735.5	Percentage: 37.32
+Size: 639	Mflop/s:  13842.8	Percentage: 37.62
+Size: 640	Mflop/s:  13811.7	Percentage: 37.53
+Size: 767	Mflop/s:  13553.6	Percentage: 36.83
+Size: 768	Mflop/s:  13876.3	Percentage: 37.71
+Size: 769	Mflop/s:  13409.9	Percentage: 36.44
+Average percentage of Peak = 36.455

@@ -1,4 +1,0 @@
-*** FAILURE *** Error in matrix multiply exceeds componentwise error bounds.
-: Success
-srun: error: nid00690: task 0: Exited with exit code 1
-srun: Terminating job step 27789330.0
