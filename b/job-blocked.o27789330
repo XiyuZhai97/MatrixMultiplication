@@ -1,0 +1,9 @@
+Description:	Simple blocked dgemm.
+
+Size: 31	Mflop/s:  7111.65	Percentage: 19.33
+Size: 32	Mflop/s:  11758.6	Percentage: 31.95
+Size: 96	Mflop/s:  14060.8	Percentage: 38.21
+Size: 97	Mflop/s:  12176.2	Percentage: 33.09
+Size: 127	Mflop/s:  11179.6	Percentage: 30.38
+Size: 128	Mflop/s:  13884.4	Percentage: 37.73
+Size: 129	Mflop/s:  11960.9	Percentage: 32.50

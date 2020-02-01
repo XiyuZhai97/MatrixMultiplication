@@ -1,0 +1,6 @@
+/global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/rebuild_cache.dir
+/global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/edit_cache.dir
+/global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/benchmark-blocked.dir
+/global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/benchmark-blas.dir
+/global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/benchmark.dir
+/global/homes/x/xiyu49/workspace/MatrixMultiplication/b/CMakeFiles/benchmark-naive.dir

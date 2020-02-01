@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/global/homes/x/xiyu49/workspace/MatrixMultiplication/dgemm-blocked.c
+x86intrin.h
+-
+immintrin.h
+-
+stdlib.h
+-
+stdint.h
+-
+math.h
+-
+
