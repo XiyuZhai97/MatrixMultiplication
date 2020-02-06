@@ -7,10 +7,14 @@
 #IncludeRegexTransform: 
 
 /global/homes/x/xiyu49/workspace/MatrixMultiplication/dgemm-blocked.c
-immintrin.h
+xmmintrin.h
+-
+stdio.h
 -
 string.h
-/global/homes/x/xiyu49/workspace/MatrixMultiplication/string.h
-stdio.h
+-
+pmmintrin.h
+-
+immintrin.h
 -
 

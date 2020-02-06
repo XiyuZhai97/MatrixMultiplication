@@ -69,16 +69,6 @@ static inline void matmul_4xkxkx4(int lda, int K, double* a, double* b, double* 
     }
   }
 }
-//static inline void dp(int lda,int resi,int resj,double*a,double*b,double*C){
-//  __mm64d clist[4];
-//  _mm256_load_pd(a);
-//  _mm256_load_pd(b);
-//  _mm256_add_pd(clist,a,b);
-//  for (int i=0:i<4;i++){
-//    cij+=clist[i];
- // }
-//  C[resi+resj*lda]=cij;
-//}
 
 static inline void copy_a (int lda, const int K, double* a_src, double* a_dst) {
   for (int i = 0; i < K; ++i) 
@@ -141,22 +131,6 @@ static inline void copyadd0_b (int lda, const int K, double* b_src, double* b_ds
   }
 
 }
-// this function assumes data is stored in col-major
-// if data is in row major, call it like matmul4x4(B, A, C)
-//void matmul4x4(double *A, double *B, double *C) {
- //   __m256d col[4], sum[4];
-  //  //load every column into registers
-   // for(int i=0; i<4; i++)  
- //     col[i] = _mm256_load_pd(&A[i*4]);
-  //  for(int i=0; i<4; i++) {
-//        sum[i] = _mm256_setzero_pd();      
- //       for(int j=0; j<4; j++) {
-  //          sum[i] = _mm256_add_pd(_mm256_mul_pd(_mm256_set1_pd(B[i*4+j]), col[j]), sum[i]);
-  //      }           
-   // }
-  //  for(int i=0; i<4; i++) 
-  //    _mm256_store_pd(&C[i*4], sum[i]); 
-//}
 
 /* This auxiliary subroutine performs a smaller dgemm operation
  *  C := C + A * B
@@ -194,65 +168,8 @@ static inline void do_block (int lda, int M, int N, int K,int newM,int newN, dou
       matmul_4xkxkx4(lda, K, a_ptr, b_ptr, C+i+j*lda,rM,rN);
     }
   }
-  //now do block product of A[resrow,K]*B
-//  if (resrow != 0) 
-//  {
-//    /* For each row of A */
-//    for ( ; i < M; ++i)
-//      /* For each column of B */ 
-//      for (int p = 0; p < N; ++p) 
-//      {
-//        /* Compute C[i,j] */
-//        double c_ip = ARRAY(C,i,p);
-//        for (int k = 0; k < K; k++)
-//          c_ip += ARRAY(A,i,k) * ARRAY(B,k,p);
-//        ARRAY(C,i,p) = c_ip;
-//      }
-//  }
-//  if (rescol != 0) 
-//  {
-//    /* For each column of B */
-//    for ( ; j < N; ++j)
-//      /* For each row of A */ 
-//      for (i = 0; i < M_floor; ++i) 
-//      {
-//        /* Compute C[i,j] */
-//        double cij = ARRAY(C,i,j);
-//        for (int k = 0; k < K; ++k)
-//          cij += ARRAY(A,i,k) * ARRAY(B,k,j);
-//        ARRAY(C,i,j) = cij;
-//      }
-//  }
 }
 
-// void print_matrix(double *M, int n_row, int n_col) {
-//   for (int i = 0; i < n_row; i++){
-//     for (int j = 0; j < n_col; j++){
-//       printf("%f ", M[i + j * n_row]);
-//     }
-//     printf("\n");
-//   }
-//   printf("\n");
-// }
-
-/* This routine performs a dgemm operation
- *  C := C + A * B
- * where A, B, and C are lda-by-lda matrices stored in column-major format. 
- * On exit, A and B maintain their input values. */  
-
- /*
-          s
-  _________________
-  |       ------- | 
-  |       |  |  | |
-  |      i------- |  
-t |       |  |  | |
-  |       ------- |
-  |          j    | 
-  |               |
-  |_______________| 
-  loop r and k are for accumulation
- */
 
  void square_dgemm (int lda, double* A, double* B, double*restrict C)
 {
@@ -288,13 +205,6 @@ t |       |  |  | |
               int K = min(BLOCK_L1, end_k-k);
               int N = min(BLOCK_L1, end_j-j);
               int M = min(BLOCK_L1, end_i-i);
-//	      printf("M,N,K:%d,%d,%d\n",M,N,K);
-//	      fflush( stdout );
-              /* Performs a smaller dgemm operation
-               *  C' := C' + A' * B'
-               * where C' is M-by-N, A' is M-by-K, and B' is K-by-N. */
-              //do_block(lda, M, N, K, A + i + k*lda, B + k + j*lda, C + i + j*lda);
-
 
               int resrow = M % 4;
               int rescol = N % 4;
