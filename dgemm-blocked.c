@@ -14,17 +14,6 @@ const char* dgemm_desc = "Simple blocked dgemm";
 ///copy array into the padded matrix
 static void pad(double* restrict A_padded, double* restrict A, const int lda, const int mat_row)
 {
-  // double * Ap,*A_temp;
-  // Ap = A;
-  // A_temp = A_padded - mat_row + lda;
-  // for (int j = 0; j < lda; ++j) {
-  //   A_temp += -lda + mat_row;
-  //   for (int i = 0; i < lda; ++i) {
-  //     *A_temp = *Ap;
-  //     Ap++;
-  //     A_temp++;
-  //   }   
-  // }   
   for (int j = 0; j < lda; j++) {
     for (int i = 0; i < lda; i++) {
       A_padded[i + j*mat_row] = A[i + j*lda];
