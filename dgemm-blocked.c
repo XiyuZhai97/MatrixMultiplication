@@ -3,37 +3,37 @@
 const char* dgemm_desc = "Simple blocked dgemm";
 #pragma GCC optimize("O3","Ofast","inline","unroll-loops","prefetch-loop-arrays")
 
-#if !defined(BLOCK_SIZEk)
-#define BLOCK_SIZEk 64
-#define BLOCK_SIZEj 64
-#define BLOCK_SIZEi 64
+#if !defined(BLOCK_SIZE_M)
+#define BLOCK_SIZE_M 64
+#define BLOCK_SIZE_N 64
+#define BLOCK_SIZE_K 64
 #endif
 
 #define min(a,b) (((a)<(b))?(a):(b))
 
-///copy array into the padded matrix
 static void pad(double* restrict A_padded, double* restrict A, const int lda, const int mat_row)
 {
-  for (int j = 0; j < lda; j++) {
-    for (int i = 0; i < lda; i++) {
-      A_padded[i + j*mat_row] = A[i + j*lda];
+  for (int j = 0; j < lda; ++j){
+    for (int i = 0; i < lda; ++i){
+      A_padded[i + j * mat_row] = A[i + j * lda];
     }
   }
 }
 
-//copy array into the unpadded matrix
 static void unpad(double* restrict A_padded, double* restrict A, const int lda, const int mat_row)
 {
-  for (int j = 0; j < lda; j++) {
-    for (int i = 0; i < lda; i++) {
-      A[i + j*lda] = A_padded[i + j*mat_row];
+  for (int j = 0; j < lda; ++j){
+    for (int i = 0; i < lda; ++i){
+      A[i + j * lda] = A_padded[i + j * mat_row];
     }   
   }   
 }
 
-/* UNROLL: This auxiliary subroutine performs a smaller dgemm operation
+/*
+ * This auxiliary subroutine performs a smaller dgemm operation
  *  C := C + A * B
- * where C is M-by-N, A is M-by-K, and B is K-by-N. */
+ * where C is M-by-N, A is M-by-K, and B is K-by-N.
+ */
 static inline void my_do_block(const int lda, const int M, const int N, const int K, double* restrict A, double* restrict B, double* restrict C)
 {
   __m256d Aik, Aik_1, Bkj, Bkj_1, Bkj_2, Bkj_3;
@@ -105,15 +105,12 @@ void square_dgemm(const int lda, double* A, double* B, double* restrict C)
 {
   int mat_row = lda;
   int mat_col = lda;
-  int div = 8;
   if (lda % 8){
     int t = lda % 8;
-    mat_row = lda + (div-t);
+    mat_row = lda + (8 - t);
+    mat_col = lda + (8 - t);
   }
-  if (lda % 4){
-    int t = lda % 4;
-    mat_col = lda + (div-t);
-  }
+
   //block size now is mat_row*mat_col
   double* A_padded = (double*) _mm_malloc(mat_row * mat_col * sizeof(double), 64);
   double* B_padded = (double*) _mm_malloc(mat_row * mat_col * sizeof(double), 64);
@@ -121,13 +118,12 @@ void square_dgemm(const int lda, double* A, double* B, double* restrict C)
   pad(A_padded, A, lda, mat_row);
   pad(B_padded, B, lda, mat_row);
   pad(C_padded, C, lda, mat_row);
-
-  for (int i = 0; i < mat_row; i += BLOCK_SIZEi){
-    for (int j = 0; j < mat_row; j += BLOCK_SIZEj){
-      for (int k = 0; k < mat_row; k += BLOCK_SIZEk){
-        int M = min (BLOCK_SIZEi, mat_row-i);
-        int N = min (BLOCK_SIZEj, mat_row-j);
-        int K = min (BLOCK_SIZEk, mat_row-k);
+  for (int i = 0; i < mat_row; i += BLOCK_SIZE_M){
+    for (int j = 0; j < mat_row; j += BLOCK_SIZE_N){
+      for (int k = 0; k < mat_row; k += BLOCK_SIZE_K){
+        int M = min (BLOCK_SIZE_M, mat_row-i);
+        int N = min (BLOCK_SIZE_N, mat_row-j);
+        int K = min (BLOCK_SIZE_K, mat_row-k);
         my_do_block(mat_row, M, N, K, A_padded + i + k*mat_row, B_padded + j*mat_row + k, C_padded + i + j*mat_row);
       }
     }
